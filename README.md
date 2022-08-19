@@ -39,8 +39,16 @@ For example, if you want a 30 $\times$ 30 circular marker field, whose center ar
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200>
    <br /><br />
 More examples below. From left to right:
+ 1. A 90 × 90 circular marker field with 4 × 4 tag shape.
+ 2. A 90 × 90 marker field with 4 × 4 tag shape and three
+empty corners. These corners can be filled by other functional patterns, such as QR locators.
+ 3. A 123 × 123 marker field with 5 × 5 tag shape. An array
+of locators are inserted. Different from the QR locators,
+these insertions are part of the marker field, as red and
+green correspond to 0 and 1 respectively.
+ 4. An 85 × 85 frame-shape marker field. The tag shapes
+are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
 <br />
- <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad1.png width=200>
   <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad2.png width=200>
    <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200>
     <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200>
