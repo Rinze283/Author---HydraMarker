@@ -49,9 +49,9 @@ are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
 <br /> <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
 ## Instructions of reading algorithm
-How to draw a position-sensing marker based on marker fields? and how to read ID tags from the position-sensing marker? This is your responsibility. 
-<br />
+How to draw a position-sensing marker based on marker fields? and how to read ID tags from the position-sensing marker? It is your responsibility. 
+<br /><br />
 If you have no idea yet, there is an example. We draw a chessboard, and put dots on it guided by a marker field, as shown below.
 <br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_markerfield.png width=100>
-<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=100>
-Then, we print this marker, attach it on some surface, and read  it based on the demo code "Example of Reading Algorithm". It is not not optimized.
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=100><br />
+Then, we print this marker on a paper, and read it based on the demo code "Example of Reading Algorithm".
