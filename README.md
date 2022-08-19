@@ -46,6 +46,7 @@ these insertions are part of the marker field, as red and
 green correspond to 0 and 1 respectively.
 3. An 85 × 85 frame-shape marker field. The tag shapes
 are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
-<br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
+<br /> <br />
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
 
  
