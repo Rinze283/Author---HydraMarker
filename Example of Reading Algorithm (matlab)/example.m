@@ -20,12 +20,12 @@ imshow(img);
 hold on;
 
 % draw dots
-scatter(ptList(:,2),ptList(:,1),50,'g','filled','o','LineWidth',1);
+scatter(ptList(:,2),ptList(:,1),20,'g','filled','o','LineWidth',1);
 
 % draw edges
 Y = ptList(:,1);
 X = ptList(:,2);
-plot(X(edge'),Y(edge'),'LineWidth',3,'Color','g');
+plot(X(edge'),Y(edge'),'LineWidth',1,'Color','g');
 
 % draw unsure IDs
 pt_uID = ptList(isnan(ptList(:,3)),:);
