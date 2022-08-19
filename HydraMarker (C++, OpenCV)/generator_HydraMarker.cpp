@@ -832,8 +832,9 @@ bool generator_HydraMarker::risk(const vector<Mat1b>& state_byTag, const vector<
 	{
 		// check all the tags containing f, including complete and relate tags
 		Mat1b compare;
-		vconcat(relate[shape], complete[shape], compare);
-
+		if (relate[shape].empty())	compare = complete[shape];
+		else		vconcat(relate[shape], complete[shape], compare);
+;
 		for (size_t i = 0; i < relate_info[shape][0].rows; i++)
 		{
 			int f_ind = relate_info[shape][0](i, 1);

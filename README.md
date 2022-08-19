@@ -25,4 +25,10 @@ There are two versions of HydraMarker.
 The **C++ & OpenCV version** is super fast. It can finish a 10 $\times$ 10 3-order marker field in 0.03 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
 The **Matlab version** is built earlier. It is significantly slower, and the method is slightly different. But if Matlab is more convenience to you, it is totally OK. It can finish a 85 $\times$ 85 4-order marker field in 1 hour, and the difference is trivial (we will update the Matlab version shortly).<br /><br />
 There is an **example.cpp/example.m** in C++ & OpenCV / Matlab version. It will teach you how to define marker field and tag shapes. The functions are also richly commented.
-For example, if
+<br /><br />
+Note that, you can highly customize your marker field by preset some values. There are four states, 0, 1, $u$, and $h$,
+where $u$ means unknown and $h$ means hollow. The toolkit will fill the unknowns and ignore the hollows. You can also define multiple tag shapes, and the toolkit will try to build a marker field satisfying them simultaneously.
+<br /><br />
+For example, if you want a 30 $\times$ 30 circular marker field, whose center area is hollow, and contains a black cross. The input marker field should be drawn as below, where black/red/gray means 0/$u$/$h$ respectively.
+ <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/init.png width=200><br />
+
