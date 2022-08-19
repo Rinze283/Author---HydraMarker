@@ -20,7 +20,7 @@ However, generating marker field is not easy. The most practical method is propo
  You can download some ready-make marker fields from their project page, http://www.fit.vutbr.cz/research/groups/graph/MF/.
  However, if you want to customize your marker fields, but do not have a supercomputer, and do not know how to modify their genetic algorithm, this HydraMarker toolkit is your best choice (at least for now).
 
-## Instructions
+## Instructions of generation algorithm
 There are two versions of HydraMarker.
 The **C++ & OpenCV version** is super fast. It can finish a 10 $\times$ 10 3-order marker field in 0.03 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
 The **Matlab version** is built earlier. It is significantly slower, and the method is slightly different. But if Matlab is more convenience to you, it is totally OK. It can finish a 85 $\times$ 85 4-order marker field in 1 hour, and the difference is trivial (we will update the Matlab version shortly).<br /><br />
@@ -36,4 +36,14 @@ For example, if you want a 30 $\times$ 30 circular marker field, whose center ar
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/shape3.png width=200><br />
  Then, feed the initial marker field and tags shape to the toolkit, and start the generation process. You might get a marker field like this.
   <br /><br />
- <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200><br />
+ <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200>
+   <br /><br />
+More examples below. From left to right:
+<br />
+ <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad1.png width=200>
+  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad2.png width=200>
+   <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200>
+    <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200>
+     <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
+
+ 
