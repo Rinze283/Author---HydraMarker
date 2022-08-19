@@ -32,12 +32,11 @@ where $u$ means unknown and $h$ means hollow. The toolkit will fill the unknowns
 For example, if you want a 30 $\times$ 30 circular marker field, whose center area is hollow, and contains a black cross. The input marker field should be drawn as below, where black/red/gray means 0/ $u$ / $h$ respectively.
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/init.png width=200><br />
  Your camera scope can cover a sub-region about 4 $\times$ 4 size, thus the first tag shape should be a 4 $\times$ 4 matrix full of 1. Sometimes, the line of sight is tilt, leading to a narrow scope, thus the second tag shape can be a 2 $\times$ 8 matrix full of 1. For some weird reason, your camera might have a biased cross shape scope, thus the third tag shape can be the matrix shown below, where black/white means 0/1 respectively (this might be too weird, but this is just an example to show what you can do for customization).
- <br /><br />
+ <br />
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/shape3.png width=200><br />
  Then, feed the initial marker field and tags shape to the toolkit, and start the generation process. You might get a marker field like this.
-  <br /><br />
- <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200>
-   <br /><br />
+<br /> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200>
+<br />
 More examples below. From left to right:
  1. A 90 × 90 circular marker field with 4 × 4 tag shape.
  2. A 90 × 90 marker field with 4 × 4 tag shape and three
@@ -48,10 +47,6 @@ these insertions are part of the marker field, as red and
 green correspond to 0 and 1 respectively.
  4. An 85 × 85 frame-shape marker field. The tag shapes
 are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
-<br />
-  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad2.png width=200>
-   <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200>
-    <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200>
-     <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
+<br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad2.png width=200><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
 
  
