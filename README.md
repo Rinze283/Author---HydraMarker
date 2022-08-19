@@ -55,3 +55,7 @@ If you have no idea yet, there is an example. We draw a chessboard, and put dots
 <br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_markerfield.png width=100>
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=100><br />
 Then, we print this marker on a paper, and read it based on the demo code "Example of Reading Algorithm".
+The reading process has 3 steps: detect, construct, # recognize.
+.....TODO.....
+This is a rough example. We believe you already have better ideas of utilizing the marker fields provided by this toolkit. Feel free! If convenient, please cite our paper.
+.....TODO.....
