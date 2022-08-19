@@ -60,5 +60,5 @@ The reading process has 3 steps: detect, construct, recognize.
 <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/track.png width=300><br />
 
-This is a rough example. We believe you will have better ideas of utilizing marker fields. Feel free to use this toolkit! If convenient, please cite our paper.
+This is a rough example. We believe you will have better ideas of utilizing marker fields. Feel free to use this toolkit! If convenient, please cite our paper or this address.
 .....TODO.....
