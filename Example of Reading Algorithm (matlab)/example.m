@@ -7,7 +7,7 @@ load 10x10_for_3x3_6x2_10x1.mat % this is a 10x10 marker field with 3 tag shapes
 %% read an image containing HydraMarker (choose one)
 img = im2double(rgb2gray(imread('10x10_for_3x3_6x2_10x1.bmp'))); % this is a systhetic image
 img = im2double(rgb2gray(imread('marker_scroll.jpg')));          % this is a real world image
-
+img = im2double(rgb2gray(imread('marker_tracking.jpg')));        % this is a tracking task
 img = imresize(img,720/max(size(img,1),size(img,2)));
 
 %% identify the features of HydraMarker
@@ -20,7 +20,7 @@ imshow(img);
 hold on;
 
 % draw dots
-scatter(ptList(:,2),ptList(:,1),100,'g','filled','o','LineWidth',1);
+scatter(ptList(:,2),ptList(:,1),50,'g','filled','o','LineWidth',1);
 
 % draw edges
 Y = ptList(:,1);
@@ -29,8 +29,8 @@ plot(X(edge'),Y(edge'),'LineWidth',3,'Color','g');
 
 % draw unsure IDs
 pt_uID = ptList(isnan(ptList(:,3)),:);
-scatter(pt_uID(:,2),pt_uID(:,1),100,'r','x','LineWidth',3);
+scatter(pt_uID(:,2),pt_uID(:,1),50,'r','x','LineWidth',3);
 
 % draw IDs
 pt_ID = ptList(~isnan(ptList(:,3)),:);
-text(pt_ID(:,2),pt_ID(:,1),num2str(pt_ID(:,3)),'FontSize',20,'Color','y');
+text(pt_ID(:,2),pt_ID(:,1),num2str(pt_ID(:,3)),'FontSize',10,'Color','y');

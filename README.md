@@ -54,9 +54,11 @@ How to draw a position-sensing marker based on marker fields? and how to read ID
 If you have no idea yet, there is an example. We draw a chessboard, and put dots on it guided by a marker field, as shown below.
 <br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_markerfield.png width=100>
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=100><br />
-Then, we print this marker on a paper, and read it based on the demo code "Example of Reading Algorithm".
+Then, we print this marker on a paper, attach it on a tool for tracking, and read the marker based on the demo code "Example of Reading Algorithm".
 The reading process has 3 steps: detect, construct, recognize.
 .....TODO.....
 <br />
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/tracking.png width=100><br />
+
 This is a rough example. We believe you will have better ideas of utilizing marker fields. Feel free to use this toolkit! If convenient, please cite our paper.
 .....TODO.....
