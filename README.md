@@ -11,5 +11,5 @@ Why we need marker field? The most reason is **position-sensing marker**. Imagin
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/ps_marker.png width=200><br />
 A commercial example, the camera-based digital pen. The pen captures and converts handwritten analog information into digital data. It locates itself on a digital paper based on a bottom view camera, and the dot array hidden in the paper.
 <br />
-<img src=https://en.wikipedia.org/wiki/Digital_paper#/media/File:Anoto_paper_principle.svg width=200><br />
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/digital_pen.png width=200><br />
 
