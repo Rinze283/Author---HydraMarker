@@ -32,4 +32,5 @@ where $u$ means unknown and $h$ means hollow. The toolkit will fill the unknowns
 For example, if you want a 30 $\times$ 30 circular marker field, whose center area is hollow, and contains a black cross. The input marker field should be drawn as below, where black/red/gray means 0/ $u$ / $h$ respectively.
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/init.png width=200><br />
  Your camera scope can cover a sub-region about 4 $\times$ 4 size, thus the first tag shape should be a 4 $\times$ 4 matrix full of 1. Sometimes, the line of sight is tilt, leading to a narrow scope, thus the second tag shape can be a 1 $\times$ 15 matrix full of 1. For some weird reason, your camera might have a cross shape scope, thus the third tag shape can be the matrix shown below, where black/white means 0/1 respectively.
+ <br /><br />
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/shape3.png width=200><br />
