@@ -9,4 +9,7 @@ With this toolkit, we can go further. For example, the following matrix is a 60 
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/field2.png width=300><br />
 Why we need marker field? The most reason is **position-sensing marker**. Imaging a remote control vehicle sliding on the marker, and locating itself by a bottom view camera, which has a very limited field-of-view, as shown below. The vehicle can still estimate its position on this marker, because the sub-region it observes is unique.<br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/ps_marker.png width=200><br />
+A commercial example, the camera-based digital pen. The pen captures and converts handwritten analog information into digital data. It locates itself on a digital paper based on a bottom view camera, and the dot array hidden in the paper.
+<br />
+<img src=https://en.wikipedia.org/wiki/Digital_paper#/media/File:Anoto_paper_principle.svg width=200><br />
 
