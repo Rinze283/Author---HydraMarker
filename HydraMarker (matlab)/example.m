@@ -13,9 +13,8 @@ state = -ones(10);
 %  0, hollow
 %  1, solid
 shape{1,1} = ones(3,3);
-% shape{2,1} = ones(3,6);
-% shape{3,1} = ones(2,9);
-% shape{4,1} = ones(1,20);
+shape{2,1} = ones(2,5);
+shape{3,1} = ones(1,10);
 
 % choose the algorithm
 % fast-bWFC (recommend)
