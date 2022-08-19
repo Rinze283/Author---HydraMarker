@@ -6,13 +6,13 @@ reset_toolkit;
 %   1, preset value
 % -1, unknown
 % -2, hollow
-state = -ones(20);
+state = -ones(10);
 
 % define N tag shapes, which is a Nx1 cell
 % each cell is a matrix that
 %  0, hollow
 %  1, solid
-shape{1,1} = ones(3,4);
+shape{1,1} = ones(3,3);
 % shape{2,1} = ones(3,6);
 % shape{3,1} = ones(2,9);
 % shape{4,1} = ones(1,20);
@@ -29,4 +29,4 @@ result = generate_MF(state,shape,method);
 % marker appearance is independent from marker field
 % there are some examples
 figure;
-imshow(Cpainter.draw_deltille(result.state,20))
+imshow(Cpainter.draw_bw(result.state,20));
