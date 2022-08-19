@@ -12,4 +12,4 @@ Why we need marker field? The most reason is **position-sensing marker**. Imagin
 A commercial example, the camera-based digital pen. The pen captures and converts handwritten analog information into digital data. It locates itself on a digital paper based on a bottom view camera. The camera observes the dot array hidden in the paper, but only a small sub-region (typically 6 $\times$ 6). The pen must read its absolute position on this paper based on this 6 $\times$ 6 ID tag. See?
 <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/digital_pen.png width=200><br />
-Well, the dot array is actually built from **de Bruijn sequence**. It is different from marker field, but the purpose of "position-sensing" is the same.
+Well, the dot array is actually built from **de Bruijn sequence**. It is different from marker field, but the purpose of "position-sensing" is the same. In many applications, the visual conditions is not this good. There might be occlusions, and reading 4 states might be unreliable (2D position-sensing marker built from de Bruijn sequence has 4 states, but from marker field only has 2 states).
