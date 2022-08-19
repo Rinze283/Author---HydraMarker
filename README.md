@@ -48,5 +48,11 @@ green correspond to 0 and 1 respectively.
 are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
 <br /> <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
-
- 
+## Instructions of reading algorithm
+How to compose position-sensing marker based on marker fields? For example, we can convert the marker field below (binary matrix) into black/white squares as we did previously, or into a chessboard with dots, or into a dot array.  
+<br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_marker field.png width=200>
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_bw.png width=200>
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=200>
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_dots.png width=200>
+, and how to read the the position-sensing marker are your response! 
+However, if you have no idea. We also provide an example demo. It is not not optimized.
