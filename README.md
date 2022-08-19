@@ -22,5 +22,5 @@ However, generating marker field is not easy. The most practical method is propo
 
 ## Instructions
 There are two versions of HydraMarker.
-The **C++ & OpenCV version** is super fast. It can finish a 12 $\times$ 12 3-order marker field in 15 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
+The **C++ & OpenCV version** is super fast. It can finish a 10 $\times$ 10 3-order marker field in 0.03 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
 The **Matlab version** is built earlier. It is significantly slower, and the method is slightly different. But if Matlab is more convenience to you, it is totally OK. It can finish a 85 $\times$ 85 4-order marker field in 1 hour. The difference is trivial.
