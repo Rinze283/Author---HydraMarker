@@ -58,7 +58,7 @@ Then, we print this marker on a paper, attach it on a tool for tracking, and rea
 The reading process has 3 steps: detect, construct, recognize.
 .....TODO.....
 <br />
-<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/tracking.png width=300><br />
+<img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/track.png width=300><br />
 
 This is a rough example. We believe you will have better ideas of utilizing marker fields. Feel free to use this toolkit! If convenient, please cite our paper.
 .....TODO.....
