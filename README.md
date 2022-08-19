@@ -20,3 +20,7 @@ However, generating marker field is not easy. The most practical method is propo
  You can download some ready-make marker fields from their project page, http://www.fit.vutbr.cz/research/groups/graph/MF/.
  However, if you want to customize your marker fields, but do not have a supercomputer, and do not know how to modify their genetic algorithm, this HydraMarker toolkit is your best choice (at least for now).
 
+## Instructions
+There are two versions of HydraMarker.
+The **C++ & OpenCV version** is super fast. It can finish a 12 $\times$ 12 3-order marker field in 15 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
+The **Matlab version** is built earlier. It is significantly slower, and the method is slightly different. But if Matlab is more convenience to you, it is totally OK. It can finish a 85 $\times$ 85 4-order marker field in 1 hour. The difference is trivial.
