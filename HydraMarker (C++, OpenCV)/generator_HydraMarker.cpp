@@ -71,7 +71,7 @@ void generator_HydraMarker::generate(const METHOD method, const double max_ms, c
 	if (method == METHOD::GENETIC) std::cout << "Genetic: Uniform Marker Fields, Camera Localization By Orientable De Bruijn Tori (we fail to run the published codes and fail to contact the authors till 2022.7.21, thus this is the genetic algorithm we implemented based on the paper)";
 	std::cout << endl;
 	std::cout << "in " << this->max_ms << " ms" << endl;
-
+	
 	// jump to methods
 	this->time_start = (double)getTickCount();
 	if (method == METHOD::DOF)		generate_DOF(show_process, path);
@@ -281,6 +281,20 @@ void generator_HydraMarker::generate_BWFC(const bool show_process, const string 
 	build_table();
 	build_pool();
 
+	// upper bound estimation
+	for (size_t shape = 0; shape < this->tag_shape.size(); shape++)
+	{
+		double tag_num = pow(2, sum((this->tag_shape[shape] == 1) / 255)(0)-sqrt(this->rot_prop[shape]));
+		Mat need_fill;
+		erode(this->field == 2, need_fill, this->tag_shape[shape], Point(-1, -1), 1, BORDER_CONSTANT, 0);
+		double need_num = sum((need_fill == 255) / 255)(0);
+		if (tag_num < need_num)
+		{
+			std::cout << "\nthe request marker field is larger than possible!" << endl;
+			break;
+		}
+	}
+
 	// get the number of overall tags
 	int num_tag = 0;		
 	for (size_t shape = 0; shape < this->tag_shape.size(); shape++)
@@ -398,6 +412,20 @@ void generator_HydraMarker::generate_FBWFC(const bool show_process, const string
 
 	build_table();
 
+	// upper bound estimation
+	for (size_t shape = 0; shape < this->tag_shape.size(); shape++)
+	{
+		double tag_num = pow(2, sum((this->tag_shape[shape] == 1) / 255)(0) - sqrt(this->rot_prop[shape]));
+		Mat need_fill;
+		erode(this->field == 2, need_fill, this->tag_shape[shape], Point(-1, -1), 1, BORDER_CONSTANT, 0);
+		double need_num = sum((need_fill == 255) / 255)(0);
+		if (tag_num < need_num)
+		{
+			std::cout << "\nthe request marker field is larger than possible!" << endl;
+			break;
+		}
+	}
+
 	// get the number of overall tags
 	int num_tag = 0;		
 	for (size_t shape = 0; shape < this->tag_shape.size(); shape++)
@@ -506,6 +534,20 @@ void generator_HydraMarker::generate_DOF(const bool show_process, const string p
 		this->tree.push_back(vector<Vec3i>{});
 
 	build_table();
+
+	// upper bound estimation
+	for (size_t shape = 0; shape < this->tag_shape.size(); shape++)
+	{
+		double tag_num = pow(2, sum((this->tag_shape[shape] == 1) / 255)(0) - sqrt(this->rot_prop[shape]));
+		Mat need_fill;
+		erode(this->field == 2, need_fill, this->tag_shape[shape], Point(-1, -1), 1, BORDER_CONSTANT, 0);
+		double need_num = sum((need_fill == 255) / 255)(0);
+		if (tag_num < need_num)
+		{
+			std::cout << "\nthe request marker field is larger than possible!" << endl;
+			break;
+		}
+	}
 
 	// get the number of overall tags
 	int num_tag = 0;		
