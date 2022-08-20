@@ -12,8 +12,8 @@ Why we need marker field? The most reason is **position-sensing marker**. Imagin
 A commercial example, the camera-based digital pen. The pen captures and converts handwritten analog information into digital data. It locates itself on a digital paper based on a bottom view camera. The camera observes the dot array hidden in the paper, but only a small sub-region (typically 6 $\times$ 6). The pen must read its absolute position on this paper based on this 6 $\times$ 6 ID tag. See the trick?
 <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/digital_pen.png width=200><br />
-Well, the dot array is actually built from **de Bruijn sequence**. It is different from marker field, but the purpose of "position-sensing" is the same. In many applications, the visual conditions is not as good as this pen-paper configuration. There might be occlusions, disturbance, curved surface. More importantly, reading 4 states might be unreliable (2D position-sensing marker built from de Bruijn sequence has 4 states, but from marker field only has 2 states). So we need marker field.
-However, generating marker field is not easy. The most practical method is proposed by Szentandrasi *et al*.
+Well, the dot array is actually built from **de Bruijn sequence**. It is different from marker field, but the purpose of "position-sensing" is the same. In many applications, the visual conditions are not as good as this pen-paper configuration. There might be occlusions, disturbances, curved surfaces. More importantly, position-sensing marker built from de Bruijn sequence has 4 states, but from marker field only has 2 states. Reading 4 states is less reliable than reading 2 states (this is why most popular markers are binary). So we need marker field.
+However, generating marker field is not easy. The most practical method was proposed by Szentandrasi *et al*.
 
     I. Szentandrasi, M. Zacharias, J. Havel, A. Herout, M. Dubska, and R. Kajan, “Uniform marker fifields: Camera localization by
     orientable de bruijn tori,” in Proc. IEEE International Symposium on Mixed and Augmented Reality. IEEE, 2012, pp. 319–320.
@@ -24,9 +24,9 @@ However, generating marker field is not easy. The most practical method is propo
 There are two versions of HydraMarker.
 The **C++ & OpenCV version** is super fast. It can finish a 10 $\times$ 10 3-order marker field in 0.03 seconds, and a 85 $\times$ 85 4-order marker field in 1.5 minutes. The paper uses this version for experiments.
 The **Matlab version** is built earlier. It is significantly slower, and the method is slightly different. But if Matlab is more convenience to you, it is totally OK. It can finish a 85 $\times$ 85 4-order marker field in 1 hour, and the difference is trivial (we will update the Matlab version shortly).<br /><br />
-There is an **example.cpp/example.m** in C++ & OpenCV / Matlab version. It will teach you how to define marker field and tag shapes. The functions are also richly commented.
+There is an **example.cpp/example.m** in C++ & OpenCV / Matlab version. It will teach you how to define marker field and tag shapes. The relevant functions are also richly commented.
 <br /><br />
-Note that, you can highly customize your marker field by preset some values. There are four states, 0, 1, $u$, and $h$,
+Note that, you can highly customize your marker field by presetting some values. There are four states, 0, 1, $u$, and $h$,
 where $u$ means unknown and $h$ means hollow. The toolkit will fill the unknowns and ignore the hollows. You can also define multiple tag shapes, and the toolkit will try to build a marker field satisfying them simultaneously.
 <br /><br />
 For example, if you want a 30 $\times$ 30 circular marker field, whose center area is hollow, and contains a black cross. The input marker field should be drawn as below, where black/red/gray means 0/ $u$ / $h$ respectively.
@@ -34,7 +34,7 @@ For example, if you want a 30 $\times$ 30 circular marker field, whose center ar
  Your camera scope can cover a sub-region about 4 $\times$ 4 size, thus the first tag shape should be a 4 $\times$ 4 matrix full of 1. Sometimes, the line of sight is tilt, leading to a narrow scope, thus the second tag shape can be a 2 $\times$ 8 matrix full of 1. For some weird reason, your camera might have a biased cross shape scope, thus the third tag shape can be the matrix shown below, where black/white means 0/1 respectively (this might be too weird, but this is just an example to show what you can do for customization).
  <br />
  <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/shape3.png width=200><br />
- Then, feed the initial marker field and tags shape to the toolkit, and start the generation process. You might get a marker field like this.
+ Then, feed the initial marker field and tag shapes to the toolkit, and start the generation process. You might get a marker field like this.
 <br /> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/suppose.png width=200>
 <br />
 More examples below. From left to right:
@@ -51,12 +51,12 @@ are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
 ## Instructions of reading algorithm
 How to draw a position-sensing marker based on marker fields? and how to read ID tags from the position-sensing marker? It is your responsibility. 
 <br /><br />
-If you have no idea yet, there is an example. We draw a chessboard, and put dots on it guided by a marker field, as shown below.
+If you have no idea yet, there is an example. We draw a chessboard, and put dots guided by a marker field, as shown below.
 <br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_markerfield.png width=100>
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_chessboard.png width=100><br />
 Then, we print this marker on a paper, attach it on a tool for tracking, and read the marker based on the demo code "Example of Reading Algorithm".
-The reading process has 3 steps: detect, construct, recognize.
-.....TODO.....
+The reading process has 3 steps: **detect**, **construct**, **recognize**.
+The "detect" step detects cross points in an image; The "construct" step organizes the detected cross points into grids to recover the background chessboard; The "recognize" step checks whether each chessboard square has a dot, and compare the results with the marker field to determine the index of each organized cross point. 
 <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/track.png width=300><br />
 
