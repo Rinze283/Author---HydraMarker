@@ -49,7 +49,7 @@ are 4 × 4, 3 × 6, 2 × 9, and 1 × 20.
 <br /> <br />
 <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad3.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad4.png width=200> <img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/Ad6.png width=200>
 ## Instructions of reading algorithm
-How to draw a position-sensing marker based on marker fields? and how to read ID tags from the position-sensing marker? It depends on your application, and there is no standard answer. Actually, this is the world we would like to open for you by this toolkit. It is your responsibility now. 
+How to draw a position-sensing marker based on marker fields? And how to read ID tags from the position-sensing marker? It depends on your application, and there is no standard answer. Actually, this is the world we would like to open for you with this toolkit. It is your responsibility from now on. 
 <br /><br />
 However, if you have no idea yet, let us give you another short ride. <br /><br />There is an example. We draw a chessboard, and put dots guided by a marker field, as shown below.
 <br /><img src=https://github.com/Lilin2015/Author---HydraMarker/blob/main/README_md_files/trans_markerfield.png width=100>
